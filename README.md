@@ -48,8 +48,8 @@
 Например, БД Zabbix.
 
 Резервирование: pg_dump zabbix > /tmp/zabbix.dump
-
 Восстановление БД: pg_restore -d zabbix /tmp/zabbix.dump
+
 ---
 
 ### Задание 3. MySQL
@@ -65,4 +65,5 @@
 3.1
 
 Например, сделать бекап всех баз данных, хранящихся в MySQL: 
+
 mysqldump --flush-logs --delete-master-logs --single-transaction --all-databases > /tmp/mysqlbackup/
